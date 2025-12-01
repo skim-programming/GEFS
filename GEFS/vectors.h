@@ -172,6 +172,9 @@ public:
             x * other.y - y * other.x
         );
     }
+    void print() const { // logging function
+        std::cout << x << "\n" << y << "\n" << z << "\n\n";
+    }
 };
 
 inline Vector3d operator*(float s, const Vector3d& v) {
