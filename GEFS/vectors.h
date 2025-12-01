@@ -81,6 +81,10 @@ public:
     float dot(const Vector2d& other) const {
         return x * other.x + y * other.y;
     }
+
+    void print() const { // logging function
+        std::cout << "x: " << x << "\ny: " << y << "\n\n";
+    }
 };
 
 inline Vector2d operator*(float s, const Vector2d& v) {
@@ -173,7 +177,7 @@ public:
         );
     }
     void print() const { // logging function
-        std::cout << x << "\n" << y << "\n" << z << "\n\n";
+        std::cout << "x: " << x << "\ny: " << y << "\nz: " << z << "\n\n";
     }
 };
 
