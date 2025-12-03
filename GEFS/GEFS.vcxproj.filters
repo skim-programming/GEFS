@@ -35,13 +35,16 @@
     <ClInclude Include="globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="gameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
+    <ClInclude Include="component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="vectors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

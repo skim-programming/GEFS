@@ -1,7 +1,8 @@
 #include <stdint.h>
 #include <windows.h>
 #include <initializer_list>
-#include "GameObject.h"
+#include "ComponentID.h"
+#include "gameObject.h"
 
 extern int height;
 extern int width;
