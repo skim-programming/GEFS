@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <type_traits>
+#include <string>
 
 class Vector2d {
 public:
@@ -184,11 +185,12 @@ public:
         std::cout << "x: " << x << "\ny: " << y << "\nz: " << z << "\n\n";
     }
     std::string prints() const {
-        return "x: " + std::to_string(x) + "\ny: " + std::to_string(y) + "\nz: " << std::to_string(z) << "\n\n";
+        return "x: " + std::to_string(x) + "\ny: " + std::to_string(y) + "\nz: " + std::to_string(z) + "\n\n";
     }
 };
 
 inline Vector3d operator*(float s, const Vector3d& v) {
     return Vector3d(v.x * s, v.y * s, v.z * s);
 }
+
 
