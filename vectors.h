@@ -86,6 +86,9 @@ public:
     void print() const { // logging function
         std::cout << "x: " << x << "\ny: " << y << "\n\n";
     }
+    std::string prints() const {
+            return "x: " + std::to_string(x) + "\ny: " + std::to_string(y) + "\n\n";
+    }
 };
 
 inline Vector2d operator*(float s, const Vector2d& v) {
@@ -180,8 +183,12 @@ public:
     void print() const { // logging function
         std::cout << "x: " << x << "\ny: " << y << "\nz: " << z << "\n\n";
     }
+    std::string prints() const {
+        return "x: " + std::to_string(x) + "\ny: " + std::to_string(y) + "\nz: " << std::to_string(z) << "\n\n";
+    }
 };
 
 inline Vector3d operator*(float s, const Vector3d& v) {
     return Vector3d(v.x * s, v.y * s, v.z * s);
 }
+
